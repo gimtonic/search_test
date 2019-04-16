@@ -1,24 +1,37 @@
 {
   "name": "search_test",
   "version": "1.0.0",
-  "description": "",
+  "description": "search simple",
+  "author": "Korolev Anton <gimtonic@rambler.com>",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server --inline --progress --config webpack.dev.config.js --content-base dist/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gimtonic/search_test.git"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gimtonic/search_test/issues"
   },
   "homepage": "https://github.com/gimtonic/search_test#readme",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0"
   }
 }
