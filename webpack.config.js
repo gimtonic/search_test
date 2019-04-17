@@ -1,10 +1,11 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist/assets/js')
     },
     module: {
         rules: [
@@ -37,5 +38,18 @@ module.exports = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            axios: 'axios'
+        })
+    ],
+    devServer: {
+        inline: true,
+        port: 3000,
+        host: 'search-test.ordersbesma.ml',
+        hot: true
+    },
 };

@@ -1,0 +1,13 @@
+{
+    "name": "toha/search_test",
+    "description": "simple search",
+    "authors": [
+        {
+            "name": "Антон Королев",
+            "email": "a.korolev@ddemo.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
